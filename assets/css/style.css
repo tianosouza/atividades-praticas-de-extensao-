@@ -72,6 +72,16 @@ body {
     border-radius: 37px;
     background-color: var(--bg-input);
 }
+.post-mobile input::placeholder {
+    text-align: center;
+}
+.post-mobile img {
+    border: 3px solid var(--color-logo);
+    border-radius: 50%;
+}
+.post-mobile .fa-solid:hover {
+    color: var(--color-logo);
+}
 .carrocel-stories {
     display: flex;
     margin-left: 23px;
@@ -80,9 +90,7 @@ body {
 .stories {
     width: 125px;
     height: 232px;
-    border-radius: 14px;
-    
-    
+    border-radius: 14px;    
 }
 .s01 {
     background-color: var(--border-primary);
