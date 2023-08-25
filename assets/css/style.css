@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-logo: #0062E0;
+    --color-logo-secundary: #fff;
+    --bg-color-primary: rgba(0, 0, 0, 0.83);
+    --bg-input: rgba(0, 0, 0, 0.1);
+    --border-primary: #cfcfcf34;
+
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: var(--bg-color-primary);
+}
+.header-mobile-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 23px;
+    color: var(--color-logo);
+    font-size: 30px;
+    font-weight: 800;
+}
+.img-header-top {
+    display: flex;
+    gap: 12px;
+    color: var(--color-logo-secundary);
+}
+.navigator-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    color: var(--color-logo-secundary) ;  
+}
+.watch {
+    display: flex;
+}
+.watch .fa-display{
+    position: relative;   
+}
+.watch .play{
+    font-size: 15px;
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+.navigator-mobile i:hover {
+    color: var(--color-logo);   
+}
+.watch:hover {
+    color: #0062E0;
+}
+.post-mobile {
+    display: flex;
+    padding: 40px 13px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    color: var(--color-logo-secundary);
+}
+.post-mobile input {
+    width: 260px;
+    height: 40px;
+    border: 2px solid var(--border-primary);
+    border-radius: 37px;
+    background-color: var(--bg-input);
+}
+.carrocel-stories {
+    display: flex;
+    margin-left: 23px;
+    gap: 9px;
+}
+.stories {
+    width: 125px;
+    height: 232px;
+    border-radius: 14px;
+    
+    
+}
+.s01 {
+    background-color: var(--border-primary);
+}
+.s01 .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+.s01 .text img{
+    width: 120px;
+    height: 150px;
+    border-radius: 12px 12px 0 0;
+    margin: auto;
+    
+}
+.s01 .text div {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-logo);
+    color: var(--color-logo-secundary);
+    font-size: 30px;
+    margin-left: 44px;
+    margin-top: -20px; 
+    display: flex;
+    justify-content: center;   
+}
+.s01 .text div span {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.s02 {
+    background-color: bisque;
+}
+.s03 {
+    background-color: aqua;
+}
+
+
+.header-desktop {
+    display: none;
+}
