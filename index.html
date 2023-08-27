@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Projeto A P de Extensão l | Phishing</title>
 </head>
 <body>
     <header>
         <div class="header-mobile">
-            <div class="header-mobile-top">
-                <span>Facebook</span>
-                <div class="img-header-top">
+            <div class="mobile-top">
+                <h2>facebook</h2>
+                <div class="img-mobile-top">
                     <div class="logo-top search"><i class="fa-solid fa-magnifying-glass"></i></div>
                     <div class="logo-top msg"><i class="fa-brands fa-facebook-messenger"></i></div>
                 </div>
@@ -22,45 +23,50 @@
                 <i class="fa-solid fa-house"></i>
                 <i class="fa-solid fa-users"></i>
                 <div class="watch">
-                    <i class="fa-solid fa-display"></i>
-                    <i class="play">►</i>
+                    <i class="fa-solid fa-tv"></i>
+                    <span>►</span>
                 </div>
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
+    
         <div class="post-mobile">
             <img src="/assets/img/header/avatar.svg" alt="Avatar Usuário">
             <input type="text" name="name" placeholder="No que você esta pensando hoje?">
             <i class="fa-solid fa-images"></i>
         </div>
-        <div class="carrocel-stories">
-           <div class="stories s01">
-                <div class="text">
-                    <img src="" alt="">
-                    <div><span>+</span></div>
-                    <p>Cria Story</p>
-                </div>
-           </div>
-           <div class="stories s02"></div>
-           <div class="stories s03"></div>
-        </div>
-
-        <div class="header-desktop">
-            <div class="left">
-                <img src="/assets/img/header/logo-face.svg" alt="Logo Facebook">
-                <input type="search" type="text" placeholder="Buscar no Facebook">
-            </div>
-            <div class="center">
-                <i class="fa-solid fa-house"></i>
-                <img src="/assets/img/header/watch.svg" alt="Videos">
-                <img src="/assets/img/header/market.svg" alt="loja">
-                <img src="/assets/img/header/group.svg" alt="Grupos">
-                <img src="/assets/img/header/play.svg" alt="Jogos">
-            </div>
-            <div class="right"></div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="test">
+                  <div class="swiper-slide">
+                      <img src="https://source.unsplash.com/random/100x200" alt="Foto 01">
+                  </div>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://source.unsplash.com/random/100x200" alt="Foto 02">
+              </div>
+              <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/random/100x200" alt="Foto 03">
+              </div>
+              <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/random/100x200" alt="Foto 03">
+              </div>
+              <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/random/100x200" alt="Foto 03">
+              </div>
+              <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/random/100x200" alt="Foto 03">
+              </div>
+              <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/random/100x200" alt="Foto 03">
+              </div>
+              
+            </div>       
         </div>
         
+        
     </header>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="/assets/js/script.js"></script>
 </body>
 </html>

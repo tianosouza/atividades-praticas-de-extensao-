@@ -5,135 +5,127 @@
     --color-logo-secundary: #fff;
     --bg-color-primary: rgba(0, 0, 0, 0.83);
     --bg-input: rgba(0, 0, 0, 0.1);
-    --border-primary: #cfcfcf34;
+    --border-primary: #cfcfcf23;
 
 }
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 body {
     background-color: var(--bg-color-primary);
 }
-.header-mobile-top {
+.header-mobile {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 29px 23px;
-    color: var(--color-logo);
-    font-size: 30px;
-    font-weight: 800;
+    flex-direction: column;
 }
-.img-header-top {
+.header-mobile .mobile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.header-mobile .mobile-top h2 {
+    color: var(--color-logo);
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.header-mobile .mobile-top .img-mobile-top {
     display: flex;
     gap: 12px;
+    font-size: 20px;
     color: var(--color-logo-secundary);
 }
-.navigator-mobile {
+.img-mobile-top .logo-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--border-primary);
+}
+.header-mobile .navigator-mobile {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    font-size: 30px;
-    color: var(--color-logo-secundary) ;  
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--color-logo-secundary);
+    padding: 20px 0;
 }
 .watch {
     display: flex;
+    align-items: center; 
 }
-.watch .fa-display{
-    position: relative;   
+.watch i {
+    position: relative;
+    font-size: 1.3rem;  
 }
-.watch .play{
-    font-size: 15px;
+.watch span {
     position: absolute;
-    margin-top: 1px;
-    margin-left: 10px;
+    display: flex;
+    font-size: 0.6rem;
+    margin: 0 0 5px 10px;
 }
-.navigator-mobile i:hover {
-    color: var(--color-logo);   
+.navigator-mobile .fa-solid:hover {
+    color: var(--color-logo); 
 }
-.watch:hover {
-    color: #0062E0;
+.navigator-mobile .watch:hover {
+    color: var(--color-logo);
+}
+.navigator-mobile .watch:active {
+    color: var(--color-logo);    
+}
+.navigator-mobile .fa-solid:active {
+    color: var(--color-logo);    
 }
 .post-mobile {
     display: flex;
-    padding: 40px 13px;
-    align-items: center;
     justify-content: space-around;
-    font-size: 30px;
-    color: var(--color-logo-secundary);
+    align-items: center;
+}
+.post-mobile img {
+    width: 50px;
+    border: 2px solid var(--color-logo);
+    border-radius: 50%;
 }
 .post-mobile input {
     width: 260px;
-    height: 40px;
-    border: 2px solid var(--border-primary);
-    border-radius: 37px;
+    height: 35px;
+    border-radius: 50px;
     background-color: var(--bg-input);
+    border: none;
+    padding: 10px;
+    color: var(--color-logo-secundary);
+    
 }
 .post-mobile input::placeholder {
     text-align: center;
 }
-.post-mobile img {
-    border: 3px solid var(--color-logo);
-    border-radius: 50%;
+.post-mobile input:focus-visible {
+    outline: 2px solid #0062E0;
 }
-.post-mobile .fa-solid:hover {
-    color: var(--color-logo);
-}
-.carrocel-stories {
-    display: flex;
-    margin-left: 23px;
-    gap: 9px;
-}
-.stories {
-    width: 125px;
-    height: 232px;
-    border-radius: 14px;    
-}
-.s01 {
-    background-color: var(--border-primary);
-}
-.s01 .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    
-}
-.s01 .text img{
-    width: 120px;
-    height: 150px;
-    border-radius: 12px 12px 0 0;
-    margin: auto;
-    
-}
-.s01 .text div {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background-color: var(--color-logo);
+.post-mobile i {
+    font-size: 1.3rem;
     color: var(--color-logo-secundary);
-    font-size: 30px;
-    margin-left: 44px;
-    margin-top: -20px; 
+}
+.swiper {
     display: flex;
-    justify-content: center;   
+    margin-top: 20px;
 }
-.s01 .text div span {
+.swiper-slide {
+    background-color: #fff;
+    max-width: 8rem;
+    max-height: 12rem;
+    border-radius: 10px;
     display: flex;
-    margin-bottom: 10px;
+    justify-content: center;
 }
-
-.s02 {
-    background-color: bisque;
-}
-.s03 {
-    background-color: aqua;
-}
-
-
-.header-desktop {
-    display: none;
+.swiper-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 10px;
 }
