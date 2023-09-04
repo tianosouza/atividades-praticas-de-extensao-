@@ -20,7 +20,7 @@
     body {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 60px 40px repeat(3, 1fr);
+        grid-template-rows: 80px 60px repeat(3, 1fr);
         grid-template-areas: 
         "header header header header header"
         "article-left aside aside aside article-rigth"
@@ -31,7 +31,7 @@
     header {
         grid-area: header;
         width: 100%;
-        height: 60px;
+        height: 80px;
         background-color: var(--bg-color-secondary);
         overflow: hidden;
     }
@@ -42,7 +42,8 @@
     .header-desktop {
         display: flex;
         justify-content: space-between;
-        padding: 9px;
+        padding: 20px;
+        
     }
     .header-desktop .top-left {
         display: flex;
@@ -51,49 +52,38 @@
         gap: 10px;
     }
     .header-desktop .top-left .logo img {
-        width: 30px;
+        width: 40px;
         display: flex;
         justify-content: center;
-    }
-    .top-left .input {
-        width: 160px;
-        height: 30px;
-        padding: 2px;
     }
     .input .search {
         border: none;
         border-radius: 50%;
-        padding-left: 20px;
-        width: 150px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         border-radius: 100px;
         box-shadow: 0 0 0 2px;
-        background: url(/assets/img/header/search\ icon.svg) no-repeat 5px/11px var(--bg-color-primary);
-    }
-    .search:focus {
-        outline: 2px solid var(--color-logo);
-    }
-    .search::placeholder {
-        font-size: 0.6rem;
+        background: url(/assets/img/header/search\ icon.svg) no-repeat 8px/15px var(--bg-color-primary);
     }
     .header-desktop .top-center {
         display: flex;
-        gap: 15px;
+        gap: 25px;
         justify-content: center;
         align-items: center;
         color: var(--color-logo-secundary);
-        font-size: 1rem;
-        margin-left: -100px;
+        font-size: 1.1rem; 
     }
     .top-center .watch {
         display: flex;
     }
     .top-center .watch i {
         position: relative;
+        font-size: 1.1rem;
     }
     .top-center .watch span {
         position: absolute;
-        margin:  0 0 3px 5px;
+        font-size: 0.4rem;
+        margin:  0 0 5px 8px;
     }
     .top-center .fa-solid {
         transition: color 0.3s;
@@ -106,10 +96,10 @@
     }
     .top-right {
         display: flex;
-        gap: 8px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: var(--color-logo-secundary);
     }
     .top-right img {
@@ -127,19 +117,19 @@
     /*  Config article-left */
     article {
         display: contents;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
     .article-left {
         grid-area: article-left;
         background-color: var(--bg-color-secondary);
         color: var(--color-logo-secundary);
-        padding: 8px;        
+        padding: 15px;   
     }
     .article-left .user {
         display: flex;
         align-items: center;
         gap: 10px;
-        margin-top: 20px;
+        margin-top: 25px;
     }
     .article-right {
         grid-area: article-rigth;
@@ -152,8 +142,7 @@
         align-items: center;
     }
     .article-left .user-watch .watch i {
-        position: relative;
-        
+        position: relative;  
     }
     .article-left .user-watch .watch span {
         position: absolute;
@@ -165,7 +154,7 @@
 
     main {
         grid-area: main;
-        background-color: red;  
+        background-color: var(--bg-color-secondary);  
     }
 }   
 

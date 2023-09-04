@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --color-logo: #0062E0;
+    --color-logo-secundary: #ffffff;
+    --bg-color-secondary: rgba(0, 0, 0, 0.74);
+    --bg-input: rgba(219, 215, 215, 0.623);
+    --bg-color-primary: rgba(111, 108, 108, 0.767);
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;      
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto repeat(3, auto);
+        grid-template-areas: 
+        "header header  header header header"
+        "article-l main main main article-r"
+        "article-l main main main article-r"
+        "article-l footer footer footer article-r";      
+    }
+    /*  Config header */
+    header {
+        grid-area: header;
+        display: flex;
+    }
+    header .nav-left i {
+        display: none;
+    }
+    .nav-left > input {
+        display: flex;
+        height:30px;
+        padding:5px 10px;
+        border:none;
+        border-radius: 25px;
+        outline:none;
+        background-color: #eee;
+        margin-left: 10px;
+    }
+    header .nav-center {
+        display: flex;
+        margin-left: -160px;
+    }
+    /* Config article */
+    article {
+        display: flex;
+        background-color: var(--bg-color-secondary);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .a-left {
+        grid-area: article-l; 
+    }
+    .a-left .container {
+        width: 100%;
+        background-color: var(--bg-input);
+        border-radius: 10px;
+    }
+    .a-left .container .left-panel {
+        position: sticky;
+        top: 60px;
+        height: calc(100vh - 60px);
+    }
+    .a-left .container .left-panel .profile {
+        background: url('/images/avatar.svg');
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-size: cover;
+        outline: 2px solid var(--color-logo);
+    }
+    .container .left-panel ul{
+        padding: 10px 0px;
+    }
+    .container .left-panel ul li{
+        display: flex;
+        padding:.7rem 1rem;
+        align-items: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }    
+    .container .left-panel ul li > p{
+        margin-left: 10px;
+    } 
+    .container .left-panel ul li > i{
+        font-size:20px;
+        color:slateblue;
+    }
+    .container .left-panel ul li > i.fa-calendar-week{
+        color:tomato;
+    }
+    .container .left-panel ul li i.fa-briefcase{
+        color:green;
+    }
+    .container .left-panel ul li i.fa-star{
+        color:yellowgreen;
+    }
+    .container .left-panel ul li i.fa-hands-helping{
+        color:indianred;
+    }
+    .a-rigth {
+        grid-area: article-r;  
+    }
+    .a-rigth .container{
+        width: 100%;
+        background-color: var(--bg-input);
+        border-radius: 10px;
+    }
+    .a-rigth .container {
+        position: sticky;
+        top: 60px;
+        height: calc(100vh - 60px); 
+    }
+    .pages-section, .friends-section {
+        padding: 10px;
+        margin: 10px;
+    }
+    .pages-section a, .friends-section a {
+        text-decoration: none;
+        color: var(--bg-color-secondary);
+    }
+    .pages-section .page, .friends-section .friend {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+   
+    /* Config main */
+    main {
+        grid-area: main;
+    }
+    main .main-top {
+        height: 40px;
+        margin: 0 10px 10px ;
+        background-color: var(--bg-input);
+        border-radius: 10px;
+    }
+    .swipe-wrap {
+        width: 98%;
+        padding: 5px;
+    }
+    .swipe-wrap .story > img {
+        width: 100%;
+        height: 100%;
+    }
+    .swipe-wrap .story .name {
+        font-size: 12px;
+    }
+    .story.create .name{
+        color: var(--bg-color-secondary);
+        font-size: 12px;
+        left: 5px;
+    }
+    footer {
+        grid-area: footer;
+    }
+}
