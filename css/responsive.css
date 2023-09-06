@@ -69,7 +69,7 @@
         height: calc(100vh - 60px);
     }
     .a-left .container .left-panel .profile {
-        background: url('/images/avatar.svg');
+        background: url('/img/avatar.png');
         height: 30px;
         width: 30px;
         border-radius: 50%;

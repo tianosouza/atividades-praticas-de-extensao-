@@ -80,7 +80,7 @@ header .nav-center a > i {
     font-size: 1.1rem;
 }
 header .nav-right .profile {
-    background: url('/images/avatar.svg');
+    background: url('/');
     height: 30px;
     width: 30px;
     border-radius: 50%;
