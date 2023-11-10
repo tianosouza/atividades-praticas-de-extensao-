@@ -84,8 +84,6 @@ header .nav-right .profile img {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    background-size: cover;
-    outline: 2px solid var(--color-logo);
 }
 header .nav-right a {
     text-decoration: none;

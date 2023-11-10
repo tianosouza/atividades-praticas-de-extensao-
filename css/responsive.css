@@ -73,7 +73,6 @@
         height: 30px;
         width: 30px;
         border-radius: 50%;
-        outline: 2px solid var(--color-logo);
     }
     .container .left-panel ul{
         padding: 10px 0px;
