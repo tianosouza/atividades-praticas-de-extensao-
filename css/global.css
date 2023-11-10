@@ -22,7 +22,7 @@ main {
 }
 
 input {
-    height: 3rem;
+    height: 2rem;
     width: 90%;
     border-radius: 0.4rem;
     border: 0.1rem solid #dddddd;
@@ -43,7 +43,7 @@ button {
     border: none;
     color: #fff;
     font-weight: bold;    
-    height: 3rem;
+    height: 2.5rem;
     border-radius: 0.3rem;
     cursor: pointer;
 }
@@ -51,7 +51,7 @@ button {
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap:  wrap;
+    
 }
 
 .column {
@@ -60,8 +60,8 @@ button {
 }
 
 .card {
-    height: 21rem;
-    width: 25rem;
+    height: 20rem;
+    width: 18rem;
     background: #fff;
     border-radius: 0.5rem;
     gap: 1rem;
@@ -84,7 +84,7 @@ button {
 }
 
 #apresentation span {
-    font-size: 1.7rem;
+    font-size: 1rem;
     margin-left: 1.7rem;
 }
 
