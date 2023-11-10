@@ -68,12 +68,11 @@
         top: 60px;
         height: calc(100vh - 60px);
     }
-    .a-left .container .left-panel .profile {
-        background: url('/img/avatar.png');
+    .a-left .container .left-panel .profile img {
+        /* background: url('/img/avatar.png'); */
         height: 30px;
         width: 30px;
         border-radius: 50%;
-        background-size: cover;
         outline: 2px solid var(--color-logo);
     }
     .container .left-panel ul{
